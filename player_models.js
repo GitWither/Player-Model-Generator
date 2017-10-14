@@ -4,9 +4,9 @@ var plugin_data = {
 	id: 'player_model_generator',
 	title: 'Player Model Generator Test',  
 	icon: 'accessibility',
-	author: 'Wither and dragonmaster95',
+	author: 'Wither, dragonmaster95 and 3XH6R',
 	description: 'This plugin lets you easily generate a player shaped model. Go to Edit - Plugin and select the model you wish.',
-	version: '0.0.2',
+	version: '0.0.3',
 	variant: 'both'
 }
 
@@ -282,7 +282,7 @@ function generateSteve(){
     Blockbench.registerEdit('Generated Steve Model')
     //display settings
     display['head'].scale = [1.6, 1.6, 1.6]
-    display['head'].translation = [0, -29.5, 0]
+    display['head'].translation = [0, -30, 0]
     loadSlot('head')
 }
 
@@ -565,7 +565,7 @@ function generateCape(){
     Blockbench.registerEdit('Generated Cape Model')
     //display settings
     display['head'].scale = [1.6, 1.6, 1.6]
-    display['head'].translation = [0, -29.5, 0]
+    display['head'].translation = [0, -30, 0]
     loadSlot('head')
 }
 
