@@ -106,7 +106,7 @@ function generateSteve(){
     steveModel.to = [12.0, 31.5, 12.0]
     steveModel.name = "steve_head"
     steveModel.display.autouv = false
-    steveModel.faces.north.uv = [6.01, 2.01, 6.99, 3.99]
+    steveModel.faces.north.uv = [5.0092041015625, 2.0098640441894533, 6.988147163391114, 3.9897165298461914]
     steveModel.faces.east.uv = [4.01, 2.01, 5.99, 3.99]
     steveModel.faces.south.uv = [2.01, 2.01, 3.99, 3.99]
     steveModel.faces.west.uv = [0.01, 2.01, 1.99, 3.99]
