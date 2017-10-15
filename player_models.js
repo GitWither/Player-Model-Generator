@@ -17,7 +17,7 @@ if (!display.head) {
 //model entries
 //CAPE
 Blockbench.addMenuEntry('Create Cape','turned_in', function(){
-	var confirmation = new Dialog({title:'Cape Texture Warning',id:"cape_texture_warning",lines:['Your might need to edit your cape texture<br /> to a square format(32x32) to make it work in-game!<br /> ','<span style="text-decoration: underline;"><a class="open-in-browser" href="https://github.com/GitWither/Player-Model-Generator/blob/master/cape_texture.png" target="_blank">Click here</a></span>',' to get the texture template.'],draggable:true,onConfirm() {
+	var confirmation = new Dialog({title:'Cape Texture Warning',id:"cape_texture_warning",lines:['Your might need to edit your cape texture<br /> to a square format(32x32) to make it work in-game!<br /> ','<span style="text-decoration: underline;"><a class="open-in-browser" href="https://raw.githubusercontent.com/GitWither/Player-Model-Generator/master/cape_texture.png" download="cape_texture.png">Click here</a></span>',' to get the texture template.'],draggable:true,onConfirm() {
 		hideDialog()
 		generateCape()
 	}})
