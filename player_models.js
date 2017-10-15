@@ -283,6 +283,7 @@ function generateSteve(){
     //display settings
     display['head'].scale = [1.6, 1.6, 1.6]
     display['head'].translation = [0, -30, 0]
+    display['head'].rotation = [0, 180, 0]
     loadSlot('head')
 }
 
@@ -534,7 +535,8 @@ function generateAlex(){
     Blockbench.registerEdit('Generated Alex Model')
     //display settings
     display['head'].scale = [1.6, 1.6, 1.6]
-    display['head'].translation = [0, -29.5, 0]
+    display['head'].translation = [0, -30, 0]
+    display['head'].rotation = [0, 180, 0]
     loadSlot('head')
 }
 
@@ -566,6 +568,7 @@ function generateCape(){
     //display settings
     display['head'].scale = [1.6, 1.6, 1.6]
     display['head'].translation = [0, -30, 0]
+    display['head'].rotation = [0, 180, 0]
     loadSlot('head')
 }
 
