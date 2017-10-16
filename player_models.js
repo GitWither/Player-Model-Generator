@@ -572,18 +572,9 @@ function generateCape(){
     loadSlot('head')
 }
 
-
-var onInstall = function() {
-
-    //Welcome message
-    Blockbench.showMessage('Thank you for installing my plugin!', 'center')
-
-}
-
 onUninstall = function() {
-	//Goodbye message and remove entries
+	//Removing entries
 	Blockbench.removeMenuEntry('Create Steve Model')
 	Blockbench.removeMenuEntry('Create Alex Model')
 	Blockbench.removeMenuEntry('Create Cape')
-	Blockbench.showMessage('Thanks for using my plugin!', 'center')
 }
