@@ -5,7 +5,7 @@ var plugin_data = {
 	title: 'Player Model Generator Test',  
 	icon: 'accessibility',
 	author: 'Wither, dragonmaster95 and 3XH6R',
-	description: 'This plugin lets you easily generate a player shaped model.',
+	description: 'Generates player shaped models.',
 	version: '0.0.3',
 	variant: 'both'
 }
