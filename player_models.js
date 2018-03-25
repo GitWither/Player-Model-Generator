@@ -6,33 +6,10 @@ var plugin_data = {
 	icon: 'accessibility',
 	author: 'Wither, dragonmaster95 and 3XH6R',
 	description: 'Generates player shaped models.',
-	version: '0.0.3',
+    version: '0.0.3',
+    min_version: '1.11.0',
 	variant: 'both'
 }
-
-if (!display.head) {
-    display.head = {}
-}
-
-//model entries
-//CAPE
-Blockbench.addMenuEntry('Create Cape','turned_in', function(){
-	var confirmation = new Dialog({title:'Cape Texture Warning',id:"cape_texture_warning",lines:['Your might need to edit your cape texture<br /> to a square format(32x32) to make it work in-game!<br /> ','<span style="text-decoration: underline;"><a class="open-in-browser" href="https://raw.githubusercontent.com/GitWither/Player-Model-Generator/master/cape_texture.png" download="cape_texture.png">Click here</a></span>',' to get the texture template.'],draggable:true,onConfirm() {
-		hideDialog()
-		generateCape()
-	}})
-	confirmation.show()
-})
-
-//THICK ARMS
-Blockbench.addMenuEntry('Create Steve Model', 'accessibility', function() {
-    generateSteve()  
-})
-
-//THIN ARMS
-Blockbench.addMenuEntry('Create Alex Model', 'accessibility', function() {
-    generateAlex()
-})
 
 function generateSteve(){
     //loading message
@@ -544,7 +521,22 @@ function generateCape(){
     //loading message
     Blockbench.showMessage('Generating Cape Model','center')
     //cape element creation
-    var cape = addCube()
+    var cape = addCube({
+        name: 'cape',
+        from: [ 2.5, 6, 2 ],
+        to: [ 13.5, 23, 3 ],
+        faces: {
+            north: {
+                uv: [],
+                texture: ""
+            }
+        },
+        rotation: {
+            axis: 'x',
+            angle: 22.5,
+            origin: [ 7.5, 14, 5.5 ]
+        }
+    })
     cape.name = 'cape'
     cape.from = [2.5, 6, 2]
     cape.to = [13.5, 23, 3]
