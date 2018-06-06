@@ -1,2 +1,2 @@
 # Player-Model-Generator
-A plugin for [Blockbench](httos://blockbench.net/)
+A plugin for [Blockbench](https://blockbench.net/)
